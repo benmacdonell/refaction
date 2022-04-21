@@ -91,12 +91,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Helpers.cs" />
-    <Compile Include="Models\Products.cs" />
+    <Compile Include="Mappers\IProductMapper.cs" />
+    <Compile Include="Mappers\ProductMapper.cs" />
+    <Compile Include="Models\ProductOptionRequest.cs" />
+    <Compile Include="Models\ProductRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,7 +110,20 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RefactorMe.Application\RefactorMe.Application.csproj">
+      <Project>{96899b04-0c14-49a9-b9e3-ea316bd94679}</Project>
+      <Name>RefactorMe.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RefactorMe.Domain\RefactorMe.Domain.csproj">
+      <Project>{6e3cc2b6-cc07-4729-8e38-0f424b95f5ea}</Project>
+      <Name>RefactorMe.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RefactorMe.Infrastructure\RefactorMe.Infrastructure.csproj">
+      <Project>{612767ce-9202-4aca-aa2c-c262d3102b20}</Project>
+      <Name>RefactorMe.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

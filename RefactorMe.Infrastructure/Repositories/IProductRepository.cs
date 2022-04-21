@@ -9,8 +9,8 @@ namespace RefactorMe.Infrastructure.Repositories
         // NB. a different approach might be splitting this into two repositories,
         // IProductRepository and IProductOptionRepository. Given the size of this
         // project and related nature, I've decided to include them in the same file.
-        IEnumerable<Product> GetProducts();
-        IEnumerable<Product> GetProducts(string name);
+        IEnumerable<Guid> GetProducts();
+        IEnumerable<Guid> GetProducts(string name);
         Product GetProduct(Guid id);
         void InsertProduct(Product product);
         void UpdateProduct(Guid id, Product product);

@@ -6,8 +6,8 @@ namespace RefactorMe.Application.Services
 {
     public interface IProductService
     {
-        IEnumerable<Product> GetProducts();
-        IEnumerable<Product> GetProducts(string name);
+        IEnumerable<Guid> GetProducts();
+        IEnumerable<Guid> GetProducts(string name);
         Product GetProduct(Guid id);
         void CreateProduct(Product product);
         void UpdateProduct(Guid id, Product product);

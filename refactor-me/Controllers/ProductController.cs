@@ -47,12 +47,12 @@ namespace RefactorMe.WebAPI.Controllers
             /// <returns>List of matching products, or not found.</returns>
             [Route]
             [HttpGet]
-            public List<Product> SearchByName(string name)
+            public List<Guid> SearchByName(string name)
             {
-                // NB. an alternative would be to return a 404 here, depending on
+                // NB. an alternative would be to return a 404, depending on
                 // what the consumer of this API is expecting. I chose an empty list
-                // here instead because it can be parsed with the same logic that
-                // would handle a populated list, ie. doesn't require an exceptional
+                // because it can be parsed with the same logic that would handle a
+                // populated list, ie. doesn't require an exceptional
                 // case to be added on the client side.
                 return _productService.GetProducts(name).ToList();
             }

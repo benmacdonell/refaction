@@ -14,11 +14,11 @@ namespace RefactorMe.Application.Services
             this._repository = repository;
         }
 
-        public IEnumerable<Product> GetProducts() {
+        public IEnumerable<Guid> GetProducts() {
             return _repository.GetProducts();
         }
 
-        public IEnumerable<Product> GetProducts(string name)
+        public IEnumerable<Guid> GetProducts(string name)
         {
             return _repository.GetProducts(name);
         }

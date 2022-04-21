@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "refactor-me", "refactor-me\refactor-me.csproj", "{20AB69F9-F2D3-4A68-96C3-424EC8B9406E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorMe.WebApi", "refactor-me\RefactorMe.WebApi.csproj", "{20AB69F9-F2D3-4A68-96C3-424EC8B9406E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorMe.Application", "RefactorMe.Application\RefactorMe.Application.csproj", "{96899B04-0C14-49A9-B9E3-EA316BD94679}"
 EndProject
@@ -12,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorMe.Infrastructure", "RefactorMe.Infrastructure\RefactorMe.Infrastructure.csproj", "{612767CE-9202-4ACA-AA2C-C262D3102B20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorMe.Tests", "RefactorMe.Tests\RefactorMe.Tests.csproj", "{D69AE8F1-2828-458A-8DFA-AFC839484393}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorMe.WebAPI", "RefactorMe.WebAPI\RefactorMe.WebAPI.csproj", "{1168126F-41B0-4CFA-ACD9-CC433BFB0D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{D69AE8F1-2828-458A-8DFA-AFC839484393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D69AE8F1-2828-458A-8DFA-AFC839484393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69AE8F1-2828-458A-8DFA-AFC839484393}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1168126F-41B0-4CFA-ACD9-CC433BFB0D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1168126F-41B0-4CFA-ACD9-CC433BFB0D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1168126F-41B0-4CFA-ACD9-CC433BFB0D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1168126F-41B0-4CFA-ACD9-CC433BFB0D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
