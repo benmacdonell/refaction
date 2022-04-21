@@ -15,7 +15,5 @@ namespace RefactorMe.Domain.Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
         public decimal DeliveryPrice { get; set; }
-        [JsonIgnore]
-        public bool IsNew { get; set; } // TODO: remove?
     }
 }
