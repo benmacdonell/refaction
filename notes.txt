@@ -1,0 +1,27 @@
+ - split concerns into separate projects: Domain, Application, WebApi, Infrastructure
+ - made setters on entities private for fields that don't need to be updated
+ - implemented repository pattern to make data source agnostic
+ - updated API to use explicit request objects, to decouple API implementation from internal models
+ - modified SQL queries to use command parameters to protect against injection
+
+
+Production considerations:
+ - authentication
+ - rate limiting (maybe)
+ - deployment, eg. build in GitLab, docker image, deploy to Azure
+ - depending on mission critical application/time constraints: might add tests to original code, then port tests to verify new code isn't breaking business rules
+
+Other things to add:
+ - locking around 
+
+
+Questions:
+
+ - does a ProductionOption have to belong to a product, or can it exist independently?
+ - do we need to provide a way for a consumer to specify the ID for a product or option, or should the app generate these?
+   - if there's one generated externally, might be good to store this as a separate field so we have a guaranteed unique ID internally
+
+
+
+Notes:
+ - Get all products and get product by name return only the ID, is this correct? Have kept this behaviour.
