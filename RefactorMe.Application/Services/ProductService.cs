@@ -23,6 +23,11 @@ namespace RefactorMe.Application.Services
             return _repository.GetProducts(name);
         }
 
+        public Product GetProduct(Guid id)
+        {
+            return _repository.GetProduct(id);
+        }
+
         public void CreateProduct(Product product)
         {
             _repository.InsertProduct(product);
@@ -38,19 +43,19 @@ namespace RefactorMe.Application.Services
             _repository.DeleteProduct(id);
         }
 
-        public IEnumerable<ProductOption> GetOptions()
+        public IEnumerable<ProductOption> GetOptions(Guid productId)
         {
-            return _repository.GetOptions();
+            return _repository.GetOptions(productId);
         }
 
-        public ProductOption GetOptions(Guid productId, Guid id)
+        public ProductOption GetOption(Guid id)
         {
-            return _repository.GetOptions(productId, id);
+            return _repository.GetOption(id);
         }
 
-        public void CreateOption(ProductOption option)
+        public void CreateOption(Guid productId, ProductOption option)
         {
-            _repository.InsertOption(option);
+            _repository.InsertOption(productId, option);
         }
 
         public void UpdateOption(Guid id, ProductOption option)

@@ -11,12 +11,13 @@ namespace RefactorMe.Infrastructure.Repositories
         // project and related nature, I've decided to include them in the same file.
         IEnumerable<Product> GetProducts();
         IEnumerable<Product> GetProducts(string name);
+        Product GetProduct(Guid id);
         void InsertProduct(Product product);
         void UpdateProduct(Guid id, Product product);
         void DeleteProduct(Guid id);
-        IEnumerable<ProductOption> GetOptions();
-        ProductOption GetOptions(Guid productId, Guid id);
-        void InsertOption(ProductOption option);
+        IEnumerable<ProductOption> GetOptions(Guid productId);
+        ProductOption GetOption(Guid id);
+        void InsertOption(Guid productId, ProductOption option);
         void UpdateOption(Guid id, ProductOption option);
         void DeleteOption(Guid id);
     }

@@ -42,12 +42,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\ProductService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\RefactorMe.Domain\RefactorMe.Domain.csproj">
       <Project>{6E3CC2B6-CC07-4729-8E38-0F424B95F5EA}</Project>
       <Name>RefactorMe.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RefactorMe.Infrastructure\RefactorMe.Infrastructure.csproj">
+      <Project>{612767CE-9202-4ACA-AA2C-C262D3102B20}</Project>
+      <Name>RefactorMe.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
